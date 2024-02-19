@@ -6,3 +6,4 @@ streamlit
 langchain_openai
 langchain_community
 langchain
+sentence-transformers
