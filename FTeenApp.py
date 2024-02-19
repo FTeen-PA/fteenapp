@@ -8,7 +8,7 @@ import pandas as pd
 
 # Set OpenAI API key
 import os
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = "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"
 
 def load_llm_models(llm_name):
     llm = ChatOpenAI(model_name=llm_name, temperature=0.5)
@@ -40,7 +40,7 @@ def load_qa_chain(llm, chain_type, retriever):
 
 
 emb = load_embedding("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
-db = load_db("Users\\fsm33\\Final_Project\\jawazat_db", emb)
+db = load_db("Users\\fsm33\Final_Project\jawazat_db33", emb)
 llm = load_llm_models("gpt-3.5-turbo")
 retriever = load_retriever(db)
 qa_chain = load_qa_chain(llm,"stuff", retriever)
