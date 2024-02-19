@@ -4,3 +4,4 @@ pandas
 pydeck
 streamlit
 langchain_openai
+langchain_community
