@@ -8,7 +8,7 @@ import pandas as pd
 
 # Set OpenAI API key
 import os
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = "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"
 
 def load_llm_models(llm_name):
     llm = ChatOpenAI(model_name=llm_name, temperature=0.5)
