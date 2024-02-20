@@ -1,14 +1,19 @@
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 import streamlit as st
 from langchain_openai import ChatOpenAI
-from langchain_community.document_loaders import DataFrameLoader
+# from langchain_community.document_loaders import DataFrameLoader
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain.chains import ConversationalRetrievalChain
-import pandas as pd
+# import pandas as pd
+
 
 # Set OpenAI API key
-import os
-os.environ['OPENAI_API_KEY'] = "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"
+# import os
+# os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 
 def load_llm_models(llm_name):
     llm = ChatOpenAI(model_name=llm_name, temperature=0.5)
@@ -40,7 +45,7 @@ def load_qa_chain(llm, chain_type, retriever):
 
 
 emb = load_embedding("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
-db = load_db("Users\\fsm33\Final_Project\jawazat_db33", emb)
+db = load_db("./jawazat_db33", emb)
 llm = load_llm_models("gpt-3.5-turbo")
 retriever = load_retriever(db)
 qa_chain = load_qa_chain(llm,"stuff", retriever)
@@ -61,7 +66,7 @@ def main():
     # Custom CSS for RTL layout, specific fonts for title and subtitle, and font import
     rtl_and_custom_font_style = """
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Arabic:wght@400;700&display=swap');
+            @import url('/app/static/font/IBMPlexSansArabic-Bold.ttf');
             
             body {
                 direction: rtl;

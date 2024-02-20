@@ -38,31 +38,23 @@
 
 ## Modules Requirements and Installation:  
 ```sh
-pip install SpeechRecognition  
-pip install pyttsx3  
-pip install playsound  
-pip install Pillow  
-pip install pyscreenshot  
-pip install pynput  
-pip install psutil  
-pip install opencv-contrib-python  
-pip install opencv  
-pip install wikipedia  
-pip install webbrowser [Available with installer]  
-pip install bs4  
-pip install smtplib [Available with installer]  
-pip install youtube-search-python  
-pip install wmi  
-pip install geopy  
-pip install googletrans==3.1.0a0  
-pip install python-dotenv  
+pip install altair
+pip install numpy
+pip install pandas
+pip install pydeck
+pip install streamlit
+pip install langchain_openai
+pip install langchain_community
+pip install langchain
+pip install sentence-transformers
+pip install chromadb 
 ```
 ## ***⚠ NOTE: This project is currently supported on Windows OS only***
 
 ## Environment
 ```sh
 # create .env file and add these two properties
-MAIL_USERNAME="myemail@gmail.com"
+MAIL_USERNAME="fsm333@gmail.com"
 MAIL_PASSWORD="mypassword"
 ```
 
