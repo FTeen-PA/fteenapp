@@ -59,7 +59,7 @@ emb = load_embedding("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v
 db = load_db("./jawazat_db33", emb)
 llm = load_llm_models("gpt-3.5-turbo")
 retriever = load_retriever(db)
-qa_chain = load_qa_chain(llm,"stuff", retriever)
+qa_chain = load_qa_chain(llm, "stuff", retriever)
 
 
 class ChatBot:
