@@ -43,6 +43,17 @@ def load_qa_chain(llm, chain_type, retriever):
     )
     return qa_chain
 
+def send_message():
+    user_input = st.session_state.user_input
+    if user_input:
+        # Process the user input and get the response
+        bot_response = chatbot.get_response(user_input)
+        # Append user input and bot response to chat history
+        st.session_state.chat_history.append({"sender": "user", "message": user_input})
+        st.session_state.chat_history.append({"sender": "bot", "message": bot_response})
+        # Clear the input field
+        st.session_state.user_input = ''
+
 
 emb = load_embedding("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
 db = load_db("./jawazat_db33", emb)
@@ -61,6 +72,17 @@ class ChatBot:
 
 chatbot = ChatBot(qa_chain)
 
+
+def send_message():
+    user_input = st.session_state.user_input
+    if user_input:
+        bot_response = chatbot.get_response(user_input)
+        st.session_state.chat_history.append({"sender": "user", "message": user_input})
+        st.session_state.chat_history.append({"sender": "bot", "message": bot_response})
+        st.session_state.user_input = ''  # Clear the input
+
+
+
 # Define Streamlit app
 def main():
     # Custom CSS for RTL layout, specific fonts for title and subtitle, and font import
@@ -74,7 +96,7 @@ def main():
                 font-family: "Arial", sans-serif;
             }
             .stApp {
-                background-image: url('https://images-ext-2.discordapp.net/external/kY5ioEjjhg2UY1JgnQR-4UWkgtt9x_-Qsv2wWsE6wFs/https/g.top4top.io/p_2971kz9b01.jpg?format=webp&width=1920&height=906'); /* Add your image URL */
+                background-image: url('https://l.top4top.io/p_2971orcvd1.jpg'); /* Add your image URL */
                 background-attachment: fixed;
                 background-size: cover;
                 background-position: center;
@@ -155,44 +177,43 @@ def main():
             }
         </style>
     """
+
+
+
+    # Initialize session state variables
+    if 'user_input' not in st.session_state:
+        st.session_state.user_input = ''
+    if 'chat_history' not in st.session_state:
+        st.session_state.chat_history = []
+
+
     st.markdown(rtl_and_custom_font_style, unsafe_allow_html=True)
 
     # Set title and subtitle with custom CSS classes
     st.markdown('<h1 class="custom-title">المساعد الشخصي (فـطـين)</h1>', unsafe_allow_html=True)
     st.markdown('<h2 class="custom-subtitle">مرحبًا بك! كيف أقدر اساعدك:</h2>', unsafe_allow_html=True)
 
+    # User input with the on_change callback
+    st.text_input("", placeholder="أكتب سؤالك هنا ...",
+                  key="user_input", on_change=send_message, value=st.session_state.user_input)
 
-
-    # User input
-    user_input = st.text_input("", placeholder="أكتب رسالتك هنا ...")
-
-    if 'chat_history' not in st.session_state:
-        st.session_state.chat_history = []
     logo_usr = 'https://imgg.io/images/2024/02/18/c02a6e3b5dc7c491086c0fc6c593a595.png'  # يجب أن تستبدل هذا بمسار اللوجو الخاص بالمستخدم
     logo_bot = 'https://e.top4top.io/p_2970wzumc1.png'
-
-
-
-
-
+    
+    # Chatbox style
     st.write('<style>.chatbox {height: 300px; overflow-y: scroll; border: 0px solid #ccc; margin-bottom: 10px; padding: 5px;}</style>', unsafe_allow_html=True)
-    chatbox = st.empty() 
+    chatbox = st.empty()
 
-    if st.button("إرسال"):
-        if user_input:
-            # Append user input and bot response to chat history
-            st.session_state.chat_history.append({"sender": "user", "message": user_input})
-            bot_response = chatbot.get_response(user_input)
-            st.session_state.chat_history.append({"sender": "bot", "message": bot_response})
-
-        chat_history_html = "<div class='chatbox'>"
-        for chat in st.session_state.chat_history:
-            chat_history_html += f"<div class='chat-message {('user' if chat['sender'] == 'user' else 'bot')}'>"
-            chat_history_html += f"<img src='{logo_usr if chat['sender'] == 'user' else logo_bot}' class='chat-icon'>"
-            chat_history_html += f"<div class='chat-text'>{chat['message']}</div>"
-            chat_history_html += "</div>"
+    # Display chat history
+    chat_history_html = "<div class='chatbox'>"
+    for chat in st.session_state.chat_history:
+        chat_history_html += f"<div class='chat-message {('user' if chat['sender'] == 'user' else 'bot')}'>"
+        chat_history_html += f"<img src='{logo_usr if chat['sender'] == 'user' else logo_bot}' class='chat-icon'>"
+        chat_history_html += f"<div class='chat-text'>{chat['message']}</div>"
         chat_history_html += "</div>"
-        chatbox.markdown(chat_history_html, unsafe_allow_html=True)
+    chat_history_html += "</div>"
+    chatbox.markdown(chat_history_html, unsafe_allow_html=True)
 
+# The main function call
 if __name__ == "__main__":
     main()
