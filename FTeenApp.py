@@ -224,7 +224,7 @@ def main():
         st.text_input("", placeholder="أكتب سؤالك هنا ...",
                     key="user_input", on_change=send_message, value=st.session_state.user_input)
 
-        logo_usr = 'https://github.com/FTeen-PA/fteenapp/blob/main/photos/icon02.png?raw=true'  
+        logo_usr = 'https://raw.githubusercontent.com/FTeen-PA/fteenapp/main/photos/icon02.png?token=GHSAT0AAAAAACOOJLNA26WHJMXMIUUURLGQZOWER3A'  
         logo_bot = 'https://github.com/FTeen-PA/fteenapp/blob/main/photos/icon01.png?raw=true'
 
         for chat in st.session_state.chat_history:
