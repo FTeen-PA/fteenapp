@@ -191,8 +191,7 @@ def main():
             }
         </style>
     """
-    st.markdown('<h1 class="custom-title">المساعد الشخصي (فـطـين)</h1>', unsafe_allow_html=True)
-    st.markdown('<h2 class="custom-subtitle">مرحبًا بك! كيف أقدر اساعدك:</h2>', unsafe_allow_html=True)
+   
     tab1, tab2, tab3 = st.tabs(["اسألني", "تواصل معنا", "عن النظام"])
     with tab1:
 
