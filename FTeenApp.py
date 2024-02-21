@@ -189,6 +189,16 @@ def main():
             font-family: 'IBM Plex Arabic', sans-serif;
             }
         </style>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+                if (isMobile) {
+                    document.body.style.backgroundImage = "url('https://j.top4top.io/p_2973qhc431.jpg')";
+                } else {
+                    document.body.style.backgroundImage = "url('https://www.raed.net/img?id=658216')";
+                }
+            });
+        </script>
     """
  
     tab1, tab2, tab3 = st.tabs(["اسألني", "تواصل معنا", "عن النظام"])
