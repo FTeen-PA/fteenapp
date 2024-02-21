@@ -101,18 +101,18 @@ def main():
                 text-align: right;
             }
             .custom-title {
-                font-family: 'IBM Plex Arabic', sans-serif; /* Use the imported font for the title */
-                font-size: 24px; /* You can adjust the size as needed */
-                color: #00651d; /* Adjust color as needed */
+                font-family: 'IBM Plex Arabic', sans-serif !important ; 
+                font-size: 24px; 
+                color: #00651d; 
             }
             .custom-subtitle {
-                font-family: 'IBM Plex Arabic', sans-serif; /* Use the imported font for the subtitle */
-                font-size: 20px; /* You can adjust the size as needed */
-                color: #303030; /* Adjust color as needed */
+                font-family: 'IBM Plex Arabic', sans-serif !important;
+                font-size: 20px; 
+                color: #303030; 
             }
                         /* New style for the input placeholder */
             ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-                font-family: 'IBM Plex Arabic', sans-serif;
+                font-family: 'IBM Plex Arabic', sans-serif !important ;
                 font-size: 16px; /* You can adjust the size as needed */
                 color: #A9A9A9; /* Adjust color as needed */
                 opacity: 1; /* Firefox */
@@ -129,7 +129,7 @@ def main():
                 background-color: #4CAF50; /* Optional: Adjust background color */
             }
             .custom-response {
-                font-family: 'IBM Plex Arabic', sans-serif;
+                font-family: 'IBM Plex Arabic', sans-serif !important;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 2;
@@ -141,12 +141,12 @@ def main():
             .chat-message {
                 display: flex;
                 align-items: center;
-                font-family: 'IBM Plex Arabic', sans-serif;
+                font-family: 'IBM Plex Arabic', sans-serif !important;
             }
             .chat-icon {
                 width: 30px;
                 height: 30px;
-                border-radius: 15px; /* جعل الأيقونة دائرية */
+                border-radius: 15px; 
                 margin-right: 10px;
             }
             .chat-text {
@@ -156,7 +156,7 @@ def main():
                 padding: 10px;
             }
             stButton>button {
-            font-family: 'IBM Plex Arabic', sans-serif;
+            font-family: 'IBM Plex Arabic', sans-serif !important;
             font-size: 16px;
             border: none;
             border-radius: 5px;
@@ -188,9 +188,9 @@ def main():
             document.addEventListener("DOMContentLoaded", function() {
                 var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
                 if (isMobile) {
-                    document.body.style.backgroundImage = "url('https://j.top4top.io/p_2973qhc431.jpg')";
+                    document.body.style.backgroundImage = "url('https://i.ibb.co/tBXLzXp/image.jpg')";
                 } else {
-                    document.body.style.backgroundImage = "url('https://www.raed.net/img?id=658216')";
+                    document.body.style.backgroundImage = "url('https://i.ibb.co/Zfy4yd4/Background44.jpg')";
                 }
             });
         </script>
