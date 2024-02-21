@@ -93,7 +93,7 @@ def main():
             body {
                 direction: rtl;
                 text-align: right;
-                font-family: "Arial", sans-serif;
+                font-family: "IBM Plex Arabic", sans-serif;
             }
             .stApp {
                 background-image: url('https://l.top4top.io/p_2971orcvd1.jpg'); /* Add your image URL */
