@@ -100,11 +100,6 @@ def main():
                 direction: rtl;
                 text-align: right;
             }
-            @media (max-width: 414px) {
-                body {
-                    background-color: red !important;
-                }
-            }
             .custom-title {
                 font-family: 'IBM Plex Arabic', sans-serif; /* Use the imported font for the title */
                 font-size: 24px; /* You can adjust the size as needed */
