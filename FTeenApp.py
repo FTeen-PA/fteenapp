@@ -86,7 +86,7 @@ def main():
     # Custom CSS for RTL layout, specific fonts for title and subtitle, and font import
     rtl_and_custom_font_style = """
         <style>
-            @import url('/app/static/font/IBMPlexSansArabic-Bold.ttf');
+            @import url('/app/static/font/IBM Plex Arabic.ttf');
             
             body {
                 direction: rtl;
