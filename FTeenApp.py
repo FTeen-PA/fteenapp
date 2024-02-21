@@ -100,10 +100,10 @@ def main():
                 direction: rtl;
                 text-align: right;
             }
-            @media (max-width: 390px) {
+            @media (max-width: 414px) {
                 body {
-                    background-image: url('https://j.top4top.io/p_2973qhc431.jpg') !important;
-                 }
+                    background-color: red !important;
+                }
             }
             .custom-title {
                 font-family: 'IBM Plex Arabic', sans-serif; /* Use the imported font for the title */
