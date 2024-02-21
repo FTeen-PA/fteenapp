@@ -225,7 +225,7 @@ def main():
                     key="user_input", on_change=send_message, value=st.session_state.user_input)
 
         logo_usr = 'https://raw.githubusercontent.com/FTeen-PA/fteenapp/main/photos/icon02.png?token=GHSAT0AAAAAACOOJLNA26WHJMXMIUUURLGQZOWER3A'  
-        logo_bot = 'https://github.com/FTeen-PA/fteenapp/blob/main/photos/icon01.png?raw=true'
+        logo_bot = 'https://raw.githubusercontent.com/FTeen-PA/fteenapp/main/photos/icon01.png?token=GHSAT0AAAAAACOOJLNBQHLKO6J2VVBF3HEOZOWEUDA'
 
         for chat in st.session_state.chat_history:
             chat_history_html += f"<div class='chat-message {('user' if chat['sender'] == 'user' else 'bot')}'>"
