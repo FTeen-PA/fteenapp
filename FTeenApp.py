@@ -86,11 +86,11 @@ def main():
     # Custom CSS for RTL layout, specific fonts for title and subtitle, and font import
     rtl_and_custom_font_style = """
         <style>
-            @import url('https://github.com/FTeen-PA/fteenapp/blob/main/static/font/IBMPlexSansArabic-Bold.ttf');
+            @import url('fonts.googleapis.com/css2?family=IBM+Plex+Arabic:wght@400;700&display=swap');
             body {
                 direction: rtl;
                 text-align: right;
-                font-family: "IBM Plex Arabic", sans-serif;
+                font-family: "IBM Plex Arabic", sans-serif !important;
             }
             .stApp {
                 background-image: url('https://i.ibb.co/Zfy4yd4/Background44.jpg'); 
