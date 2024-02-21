@@ -5,7 +5,7 @@
 
 *It is an Personal Assistant, capable to perform many tasks with some unique features*  
 
-![alt text](FTeenPIX)
+![alt text](FTeenPIX.jpg)
 
 
 ## The Main Feature:  
