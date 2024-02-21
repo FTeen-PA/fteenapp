@@ -86,7 +86,7 @@ def main():
     # Custom CSS for RTL layout, specific fonts for title and subtitle, and font import
     rtl_and_custom_font_style = """
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Arabic:wght@400;700&display=swap');
+            @import url('https://github.com/FTeen-PA/fteenapp/blob/main/static/font/IBMPlexSansArabic-Bold.ttf');
             body {
                 direction: rtl;
                 text-align: right;
