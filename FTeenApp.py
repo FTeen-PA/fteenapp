@@ -237,6 +237,8 @@ def main():
 
     with tab3:
         st.markdown(rtl_and_custom_font_style, unsafe_allow_html=True)
+        st.markdown('<div class="stText"> يعد منصة او تطبيق فطين منصة غير رسميةوتحت التطوير ليتم اعتمادها لذلك نخلو مسؤليتنا عن اي اجابات عير صحيحة قانونياً </div>', unsafe_allow_html=True)
+        st.markdown('<br>', unsafe_allow_html=True)
         st.markdown('<div class="stText">فطين .. بداية جديدة للرد التفاعلي ، يهدف لرفع مستوى رضا المستخدمين نقلة نوعية إلى مستوى مختلف تماماً مما جعل التواصل أكثر كفاءة وفعالية ، فطين سيصبح نموذجاً مثيراً لروبوت الدردشة لخدمة العملاء بوزارة الداخلية.</div>', unsafe_allow_html=True)
         st.markdown('<br>', unsafe_allow_html=True)
         st.markdown('<div class="stText">كيف تعلم فطين ؟ تم تغذية فطين كمرحلة ( مبدئية ) من خلال دمج بيانات حساب خدمة العملاء للمديرية العامة للجوازات بمنصة تويتر وكذلك التعليمات والإجراءات الرسمية للوزارة . و سيتبعها بمشيئة الله مرحلة جمع بيانات جميع القطاعات ( بعد تمكيننا من ذلك ) ليصبح فطين أكثر شمولية وتكامل .</div>', unsafe_allow_html=True)
