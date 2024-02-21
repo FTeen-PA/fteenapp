@@ -190,7 +190,7 @@ def main():
             }
         </style>
     """
-   
+ 
     tab1, tab2, tab3 = st.tabs(["اسألني", "تواصل معنا", "عن النظام"])
     with tab1:
 
@@ -202,17 +202,9 @@ def main():
 
 
         st.markdown(rtl_and_custom_font_style, unsafe_allow_html=True)
-
-        # Set title and subtitle with custom CSS classes
         st.markdown('<h1 class="custom-title">المساعد الشخصي (فـطـين)</h1>', unsafe_allow_html=True)
         st.markdown('<h2 class="custom-subtitle">مرحبًا بك! كيف أقدر اساعدك:</h2>', unsafe_allow_html=True)
 
-        # User input with the on_change callback
-        st.text_input("", placeholder="أكتب سؤالك هنا ...",
-                    key="user_input", on_change=send_message, value=st.session_state.user_input)
-
-        logo_usr = 'https://imgg.io/images/2024/02/18/c02a6e3b5dc7c491086c0fc6c593a595.png'  
-        logo_bot = 'https://e.top4top.io/p_2970wzumc1.png'
         
         # Chatbox style
         st.write('<style>.chatbox {height: 300px; overflow-y: scroll; border: 0px solid #ccc; margin-bottom: 10px; padding: 5px;}</style>', unsafe_allow_html=True)
@@ -220,6 +212,16 @@ def main():
 
         # Display chat history
         chat_history_html = "<div class='chatbox'>"
+                # Set title and subtitle with custom CSS classes
+
+
+        # User input with the on_change callback
+        st.text_input("", placeholder="أكتب سؤالك هنا ...",
+                    key="user_input", on_change=send_message, value=st.session_state.user_input)
+
+        logo_usr = 'https://imgg.io/images/2024/02/18/c02a6e3b5dc7c491086c0fc6c593a595.png'  
+        logo_bot = 'https://imgg.io/images/2024/02/21/95d66265638c7ed7aea719ec65a69db7.png'
+
         for chat in st.session_state.chat_history:
             chat_history_html += f"<div class='chat-message {('user' if chat['sender'] == 'user' else 'bot')}'>"
             chat_history_html += f"<img src='{logo_usr if chat['sender'] == 'user' else logo_bot}' class='chat-icon'>"
