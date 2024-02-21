@@ -93,7 +93,7 @@ def main():
                 font-family: "IBM Plex Arabic", sans-serif;
             }
             .stApp {
-                background-image: url('https://b.top4top.io/p_2973umusk1.jpg'); /* Add your image URL */
+                background-image: url('https://www.raed.net/img?id=658216'); /* Add your image URL */
                 background-attachment: fixed;
                 background-size: cover;
                 background-position: center;
