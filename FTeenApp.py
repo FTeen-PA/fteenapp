@@ -86,12 +86,11 @@ def main():
     # Custom CSS for RTL layout, specific fonts for title and subtitle, and font import
     rtl_and_custom_font_style = """
         <style>
-            @import url('/app/static/font/IBMPlexArabic-Bold.ttf');
-            
+            @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Arabic:wght@400;700&display=swap');
             body {
                 direction: rtl;
                 text-align: right;
-                font-family: "IBMPlexArabic-Bold", sans-serif;
+                font-family: "IBM Plex Arabic", sans-serif;
             }
             .stApp {
                 background-image: url('https://l.top4top.io/p_2971orcvd1.jpg'); /* Add your image URL */
@@ -107,27 +106,27 @@ def main():
                  }
             }
             .custom-title {
-                font-family: 'IBMPlexArabic-Bold', sans-serif; /* Use the imported font for the title */
+                font-family: 'IBM Plex Arabic', sans-serif; /* Use the imported font for the title */
                 font-size: 24px; /* You can adjust the size as needed */
                 color: #00651d; /* Adjust color as needed */
             }
             .custom-subtitle {
-                font-family: 'IBMPlexArabic-Bold', sans-serif; /* Use the imported font for the subtitle */
+                font-family: 'IBM Plex Arabic', sans-serif; /* Use the imported font for the subtitle */
                 font-size: 20px; /* You can adjust the size as needed */
                 color: #303030; /* Adjust color as needed */
             }
                         /* New style for the input placeholder */
             ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-                font-family: 'IBMPlexArabic-Bold', sans-serif;
+                font-family: 'IBM Plex Arabic', sans-serif;
                 font-size: 16px; /* You can adjust the size as needed */
                 color: #A9A9A9; /* Adjust color as needed */
                 opacity: 1; /* Firefox */
             }
             .stTextInput>div>div>input {
-                font-family: 'IBMPlexArabic-Bold', sans-serif !important;
+                font-family: 'IBM Plex Arabic', sans-serif !important;
             }
             .stButton>button {
-                font-family: 'IBMPlexArabic-Bold', sans-serif !important;
+                font-family: 'IBM Plex Arabic', sans-serif !important;
                 font-size: 18px; /* Adjust the size as needed */
                 color: #FFFFFF; /* Adjust color as needed */
                 border: 2px solid #4CAF50; /* Optional: Adjust border style */
@@ -135,7 +134,7 @@ def main():
                 background-color: #4CAF50; /* Optional: Adjust background color */
             }
             .custom-response {
-                font-family: 'IBMPlexArabic-Bold', sans-serif;
+                font-family: 'IBM Plex Arabic', sans-serif;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 2;
@@ -147,7 +146,7 @@ def main():
             .chat-message {
                 display: flex;
                 align-items: center;
-                font-family: 'IBMPlexArabic-Bold', sans-serif;
+                font-family: 'IBM Plex Arabic', sans-serif;
             }
             .chat-icon {
                 width: 30px;
@@ -162,7 +161,7 @@ def main():
                 padding: 10px;
             }
             stButton>button {
-            font-family: 'IBMPlexArabic-Bold', sans-serif;
+            font-family: 'IBM Plex Arabic', sans-serif;
             font-size: 16px;
             border: none;
             border-radius: 5px;
@@ -179,15 +178,15 @@ def main():
             background-color: #ffffff; /* لون خلفية منطقة المحادثة */
             }
             .tab-content > div > div > div > div > div > div > div:first-child {
-            font-family: 'IBMPlexArabic-Bold', sans-serif;
+            font-family: 'IBM Plex Arabic', sans-serif;
             }
             .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
             font-size:12px;
-            font-family: 'IBMPlexArabic-Bold', sans-serif;
+            font-family: 'IBM Plex Arabic', sans-serif;
             }
             .stText {
             font-size:14px;
-            font-family: 'IBMPlexArabic-Bold', sans-serif;
+            font-family: 'IBM Plex Arabic', sans-serif;
             }
         </style>
     """
