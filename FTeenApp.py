@@ -101,7 +101,7 @@ def main():
                 direction: rtl;
                 text-align: right;
             }
-            @media (max-width: 768px) {
+            @media (max-width: 1080px) {
                 body {
                     background-image: url('https://j.top4top.io/p_2973qhc431.jpg') !important;
                  }
