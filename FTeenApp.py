@@ -93,7 +93,7 @@ def main():
                 font-family: "IBM Plex Arabic", sans-serif;
             }
             .stApp {
-                background-image: url('https://raw.githubusercontent.com/FTeen-PA/fteenapp/main/photos/%D8%AE%D9%84%D9%81%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D9%82%D8%B944.jpg?token=GHSAT0AAAAAACOOJLNBUTXSNQBFJ2JURAHQZOWEVEQ'); 
+                background-image: url('https://raw.githubusercontent.com/FTeen-PA/fteenapp/main/photos/Background44.jpg?token=GHSAT0AAAAAACOOJLNBMQMQKZGZLQ4RS474ZOWFPLQ'); 
                 background-attachment: fixed;
                 background-size: cover;
                 background-position: center;
