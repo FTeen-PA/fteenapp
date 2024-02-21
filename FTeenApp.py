@@ -101,6 +101,11 @@ def main():
                 direction: rtl;
                 text-align: right;
             }
+            @media (max-width: 1080px) {
+                body {
+                    background-image: url('https://j.top4top.io/p_2973qhc431.jpg') !important;
+                 }
+            }
             .custom-title {
                 font-family: 'IBMPlexArabic-Bold', sans-serif; /* Use the imported font for the title */
                 font-size: 24px; /* You can adjust the size as needed */
@@ -186,6 +191,7 @@ def main():
             }
         </style>
     """
+    st.title("Fateen App")
 
     tab1, tab2, tab3 = st.tabs(["اسألني", "تواصل معنا", "عن النظام"])
     with tab1:
