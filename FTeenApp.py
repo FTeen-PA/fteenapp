@@ -224,8 +224,8 @@ def main():
         st.text_input("", placeholder="أكتب سؤالك هنا ...",
                     key="user_input", on_change=send_message, value=st.session_state.user_input)
 
-        logo_usr = 'https://imgg.io/images/2024/02/18/c02a6e3b5dc7c491086c0fc6c593a595.png'  
-        logo_bot = 'https://imgg.io/images/2024/02/21/95d66265638c7ed7aea719ec65a69db7.png'
+        logo_usr = './fteenapp/photos/icon02.png'  
+        logo_bot = './fteenapp/photos/icon01.png'
 
         for chat in st.session_state.chat_history:
             chat_history_html += f"<div class='chat-message {('user' if chat['sender'] == 'user' else 'bot')}'>"
