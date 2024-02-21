@@ -232,8 +232,8 @@ def main():
     with tab2:
         st.markdown('<h2 class="custom-subtitle">نسعد بالتواصل معكم عبر أحد القنوات التالية :</h2>', unsafe_allow_html=True)
         st.markdown(rtl_and_custom_font_style, unsafe_allow_html=True)
-        st.markdown('<div class="stText">يمكن التواصل معنا عبر الإيميل التالي : t5.32hhf@gmail.com</div>', unsafe_allow_html=True)
-        st.markdown('<div class="stText">يمكن التواصل معنا عبر حسابنا في منصة إكس : Fateen@x.com</div>', unsafe_allow_html=True)
+        st.markdown('<div class="stText">يمكن التواصل معنا عبر الإيميل التالي : t5.ds.ai.g5@gmail.com</div>', unsafe_allow_html=True)
+        st.markdown('<div class="stText">يمكن التواصل معنا عبر حسابنا في منصة إكس : @Fateen012023</div>', unsafe_allow_html=True)
 
 
 
