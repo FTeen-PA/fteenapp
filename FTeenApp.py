@@ -244,7 +244,7 @@ def main():
 
     with tab3:
         st.markdown(rtl_and_custom_font_style, unsafe_allow_html=True)
-        st.markdown('<div class="stText"> يعد منصة منصة غير رسمية وتحت التطوير لذلك نخلو مسؤليتنا عن أي اجابات غير صحيحة قانونياً </div>', unsafe_allow_html=True)
+        st.markdown('<div class="stText"> تعد منصة فطين غير رسمية وتحت التطوير لذلك نخلو مسؤليتنا عن أي اجابات غير صحيحة قانونياً </div>', unsafe_allow_html=True)
         st.markdown('<br>', unsafe_allow_html=True)
         st.markdown('<div class="stText">فطين .. بداية جديدة للرد التفاعلي ، يهدف لرفع مستوى رضا المستخدمين نقلة نوعية إلى مستوى مختلف تماماً مما جعل التواصل أكثر كفاءة وفعالية ، فطين سيصبح نموذجاً مثيراً لروبوت الدردشة لخدمة العملاء بوزارة الداخلية.</div>', unsafe_allow_html=True)
         st.markdown('<br>', unsafe_allow_html=True)
