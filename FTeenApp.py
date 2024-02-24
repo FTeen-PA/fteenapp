@@ -212,7 +212,7 @@ def main():
 
         
         # Chatbox style
-        st.write('<style>.chatbox {height: 300px; overflow-y: scroll; border: 0px solid #ccc; margin-bottom: 10px; padding: 5px;}</style>', unsafe_allow_html=True)
+        st.write('<style>.chatbox {height: 150px; overflow-y: scroll; border: 0px solid #ccc; margin-bottom: 10px; padding: 5px;}</style>', unsafe_allow_html=True)
         chatbox = st.empty()
 
         # Display chat history
