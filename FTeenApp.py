@@ -10,9 +10,6 @@ from langchain_community.vectorstores import Chroma
 from langchain.chains import ConversationalRetrievalChain
 # import pandas as pd
 
-import os
-os.environ['OPENAI_API_KEY'] = "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"
-
 
 def load_llm_models(llm_name):
     llm = ChatOpenAI(model_name=llm_name, temperature=0.5)
