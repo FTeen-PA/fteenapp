@@ -49,8 +49,7 @@ www.linkedin.com/in/ai-t5-3057662b6
 
 
 
-(USE PYTHON <= 3.8 WHICH SUPPORTS ALL THE LIBRARIES)
-Raise an Issue ticket if you have any other problems  <br><br><br>
+  <br><br><br>
 
 ## Authors
 
@@ -58,5 +57,5 @@ Raise an Issue ticket if you have any other problems  <br><br><br>
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License
 
