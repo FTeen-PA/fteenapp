@@ -5,7 +5,7 @@
 
 *It is an Personal Assistant, capable to perform many tasks with some unique features*  
 
-![alt text](https://github.com/FTeen-PA/fteenapp/blob/main/photos/FTeen.jpg?raw=true)
+![alt text](https://github.com/FTeen-PA/fteenapp/blob/main/img/FTeen.jpg)
 
 
 ## The Main Feature:  
