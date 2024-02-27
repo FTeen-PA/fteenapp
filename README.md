@@ -5,7 +5,7 @@
 
 *It is an Personal Assistant, capable to perform many tasks with some unique features*  
 
-![alt text](FTeen.jpg)
+![alt text](C:\Users\fsm33\OneDrive\MY DOX\AIFinalProject\fteenapp\photos\FTeen.jpg)
 
 
 ## The Main Feature:  
@@ -80,7 +80,3 @@ https://twitter.com/Fateen012023
 
 LinkedIN:
 www.linkedin.com/in/ai-t5-3057662b6
-
-On Line App (FTeen) Link:
-
-https://fteenapp-2.streamlit.app/ 
