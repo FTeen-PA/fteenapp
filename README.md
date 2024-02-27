@@ -64,3 +64,23 @@ Raise an Issue ticket if you have any other problems  <br><br><br>
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+Social media links
+
+Deployed Application Link :
+https://fteenapp-2.streamlit.app/
+
+Public github Account :
+https://github.com/FTeen-PA/fteenapp
+
+Email : t5.ds.ai.g5@gmail.com
+
+Twitter : 
+https://twitter.com/Fateen012023
+
+LinkedIN:
+www.linkedin.com/in/ai-t5-3057662b6
+
+On Line App (FTeen) Link:
+
+https://fteenapp-2.streamlit.app/ 
