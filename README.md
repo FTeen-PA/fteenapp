@@ -35,23 +35,18 @@ pip install pysqlite3-binary
 python [main.py](FTeenApp.py)
 ```
 
-## Math Calculations 
-- What is the binary of 142?  
-- 2 + 4 - 3 x 9  
-- Right shift 4  
-- What is the value of factorial 10?  
-- What is the value of Sin 90?  
-- 9 power 5  
-- what is the log of 1000  
+## Social media links
+- Deployed Application Link :
+https://fteenapp-2.streamlit.app/
 
-## Smart Reply  
-- How are you?  
-- Who are you?  
-- Tell me something  
-- When is your birthday?  
-- You're so funny  
-- Thank You  
-- I'm sorry  
+- Email : t5.ds.ai.g5@gmail.com
+
+- Twitter : 
+https://twitter.com/Fateen012023
+
+- LinkedIN:
+www.linkedin.com/in/ai-t5-3057662b6
+
 
 
 (USE PYTHON <= 3.8 WHICH SUPPORTS ALL THE LIBRARIES)
@@ -65,18 +60,3 @@ Raise an Issue ticket if you have any other problems  <br><br><br>
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-Social media links
-
-Deployed Application Link :
-https://fteenapp-2.streamlit.app/
-
-Public github Account :
-https://github.com/FTeen-PA/fteenapp
-
-Email : t5.ds.ai.g5@gmail.com
-
-Twitter : 
-https://twitter.com/Fateen012023
-
-LinkedIN:
-www.linkedin.com/in/ai-t5-3057662b6
