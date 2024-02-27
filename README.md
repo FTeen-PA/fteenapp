@@ -5,7 +5,7 @@
 
 *It is an Personal Assistant, capable to perform many tasks with some unique features*  
 
-![alt text](C:\Users\fsm33\OneDrive\MY DOX\AIFinalProject\fteenapp\photos\FTeen.jpg)
+![alt text](\photos\FTeen.jpg)
 
 
 ## The Main Feature:  
