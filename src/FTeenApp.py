@@ -52,7 +52,7 @@ def send_message():
 
 
 emb = load_embedding("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
-db = load_db("./jawazat_db44", emb)
+db = load_db("./VectorDB", emb)
 llm = load_llm_models("gpt-3.5-turbo")
 retriever = load_retriever(db)
 qa_chain = load_qa_chain(llm, "stuff", retriever)
