@@ -9,8 +9,7 @@
 
 
 ## The Main Feature:  
-1. You can inquire about everything related to the services of the Saudi Ministry of Interior  
-2. Math Calculations
+You can inquire about everything related to the services of the Saudi Ministry of Interior
  
 
 ## Modules Requirements and Installation:  
