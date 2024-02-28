@@ -28,6 +28,8 @@ pip install pysqlite3-binary
 ```
 ## ⚠ NOTE: This project is currently supported on Windows OS and Mac OS
 
+## Methodology :
+FTeen was designed on the idea of (RAG) Retrieval-Augmented Generation, where he segmented the data based on the principles of vectorize data and summoned responses based on the question.
 
 ### To get started run main.py  
 ```sh
