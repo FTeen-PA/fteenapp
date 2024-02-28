@@ -53,9 +53,12 @@ www.linkedin.com/in/ai-t5-3057662b6
 
 ## Authors
 
- **[Faisal AlMass]** 🧐
- **[Abdurhman Aljamhan]** 
+ **[Faisal AlMass]**
+ <br>
+ **[Abdurhman Aljamhan]**
+ <br> 
 **[Tareq AlMarshod]**
+<br>
 **[Khaled AlMohana]**
 
 
