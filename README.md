@@ -53,7 +53,11 @@ www.linkedin.com/in/ai-t5-3057662b6
 
 ## Authors
 
- **[FTeen]** 🧐 
+ **[Faisal AlMass]** 🧐
+ **[Abdurhman Aljamhan]** 
+**[Tareq AlMarshod]**
+**[Khaled AlMohana]**
+
 
 ## License
 
